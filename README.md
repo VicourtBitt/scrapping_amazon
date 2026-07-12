@@ -1,4 +1,4 @@
-# 🛒 Extração dos Mais Vendidos — Amazon Brasil (Computadores e Informática)
+# Extração dos Mais Vendidos — Amazon Brasil (Computadores e Informática)
 
 Este projeto é uma automação web feita em Python que navega pelos menus da Amazon Brasil, entra no departamento de **Computadores e Informática** e coleta os itens do carrossel de **Mais Vendidos**. 
 
@@ -8,7 +8,7 @@ Além da extração em si, adicionei um monitor de performance para acompanhar o
 
 ---
 
-## 💡 Desafios Técnicos e Soluções Desenvolvidas
+## Desafios Técnicos e Soluções Desenvolvidas
 
 Quem já tentou automatizar a Amazon sabe que o site é cheio de pegadinhas para robôs. Durante o desenvolvimento, encontrei três desafios principais e resolvi da seguinte forma:
 
@@ -21,7 +21,7 @@ Quem já tentou automatizar a Amazon sabe que o site é cheio de pegadinhas para
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 Para fazer tudo isso funcionar sem dor de cabeça, utilizei as seguintes bibliotecas:
 
@@ -32,7 +32,7 @@ Para fazer tudo isso funcionar sem dor de cabeça, utilizei as seguintes bibliot
 
 ---
 
-## 📁 Estrutura de Pastas
+## Estrutura de Pastas
 
 Organizei o código de uma forma bem modular para separar a lógica de extração das ferramentas de medição:
 
@@ -48,7 +48,7 @@ Organizei o código de uma forma bem modular para separar a lógica de extraçã
 
 ---
 
-## ⚙️ Configuração do Ambiente
+## ⚙Configuração do Ambiente
 
 Aqui está o passo a passo padrão para você rodar o projeto isolado em um ambiente virtual no seu computador:
 
@@ -96,7 +96,7 @@ results = extract_best_sellers(driver, target_url, max_items=15)
 
 ---
 
-## ⏱️ Performance e Benchmarking
+## Performance e Benchmarking
 
 Para garantir que o código não está gastando processamento ou memória à toa, criei o decorador `@perf_tracker` que fica no arquivo `include/performance.py`. Sempre que a função principal termina de rodar, ela imprime um log no terminal mostrando os custos computacionais daquela extração.
 
@@ -113,7 +113,7 @@ Como o processamento do DOM é rápido e delegamos o limite de itens direto para
 
 ---
 
-## 📊 O Que Você Terá no Final?
+## O Que Você Terá no Final?
 
 Assim que o script fechar o navegador, você encontrará o arquivo `Top_Mais_Vendidos_Amazon.xlsx` na pasta raiz do projeto. A planilha final já vem formatada com:
 * Título principal com a data e hora exatas da extração.
